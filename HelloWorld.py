@@ -45,3 +45,67 @@ b = 3
 if a < b:
     sum = a+b
     print(sum)
+
+# typecasting to float
+a = 2
+b = float(a)
+print(b)
+
+x = "Siva"
+y = "das"
+z = x+y
+print(z)
+
+x = 2
+y = 3
+z = x+y
+print(z)
+
+x = "awesome"
+
+
+def myfunc():
+    print("Python is" + x)
+
+
+myfunc()
+
+
+xyz = "Global"
+
+
+def myfund():
+    xyz = "function"
+    print(xyz)
+
+
+myfund()
+print(xyz)
+
+# convert float to int
+x = 2.3
+a = int(x)
+print(a)
+
+a = "Hello, World!"
+print(a[-2])
+
+
+for everyElement in "Banana":
+    print(everyElement)
+
+
+a = "hello!"
+print(len(a))
+
+txt = "best things in life are free!"
+print("best" in txt)
+
+# Escaped used for " , ' and \
+cleartxt = "Aca\',\"&\\"
+
+abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@\'#,\"$!&\\"
+
+secret = "".join([abc[(abc.find(c)+3) % 71] for c in cleartxt])
+
+print(secret)
