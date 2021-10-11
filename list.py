@@ -131,3 +131,54 @@ y = list(mytuple)
 y.append("mango")
 mytuple = tuple(y)
 print(mytuple)
+
+
+car = {
+    "Brand": "Honda",
+    "Model": "CRV",
+    "year": "2020"
+}
+
+x = car.keys()
+car.values()
+car.get("Brand")
+car["color"] = "white"
+print(x)
+
+# check if  key exists
+
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang"
+}
+y = thisdict.keys()
+if "year" in y:
+    print("yes")
+else:
+    print("no")
+
+    # function
+
+
+def myfunc(firstname, lastname):
+    print(firstname + " "+lastname)
+
+
+myfunc("Emil", "Tobias")
+myfunc("rick", "glen")
+
+
+def func(country="India"):
+    print("I am from" + country)
+
+
+func("Brazil")
+func()
+func("UK")
+
+
+f = open("demotext.txt", "r")
+print(f.read())
+
+x = 1
+y = 6
