@@ -109,3 +109,35 @@ abc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@\'#,\"$!&\
 secret = "".join([abc[(abc.find(c)+3) % 71] for c in cleartxt])
 
 print(secret)
+
+
+# escape
+txt = "we are the \"humans\" "
+print(txt)
+
+
+# String methods
+txt = "hello world"
+print(txt.capitalize())
+
+txt = "Hello world"
+print(txt.casefold())
+
+txt = "Hello åßrld"
+x = txt.encode()
+print(x)
+
+txt = "Hello"
+
+print(txt.isprintable())`
+
+
+a = ",,,,,...... apple"
+print(a.lstrip(",."))
+
+a = "Hello Sam!"
+x = a.maketrans("S", "P")
+print(a.translate(x))
+
+a = "I like apples"
+print(a.replace("apples", "bananas"))
