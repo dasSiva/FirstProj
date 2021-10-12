@@ -16,3 +16,16 @@ while (x == 0):
     height = float(input("Please Enter the Height of a triangle:"))
     perimeter = (length + width + height)
     print("perimeter"+str(perimeter))
+
+
+sum = 0
+for i in range(6):
+    x = int(input())
+    sum = sum+x
+print(sum/5)
+
+# Assinging sum to 0
+# Runing a loop from 0 to 5
+# getting user input inside loop
+# adding the input to the sum
+# outside loop print sum divide by 5 for average
