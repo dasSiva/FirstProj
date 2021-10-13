@@ -1,2 +1,0 @@
-Username	|Password	|url 
-AAA	|DDD456	|http
