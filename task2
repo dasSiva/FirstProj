@@ -1,7 +1,0 @@
-
-import os
-# Getting username
-name = input("Welcome to Apps2U. Please enter your name: ")
-# Verifying if file exists for the user
-if os.path.exists(name+".txt"):
-    print("Welcome back")
