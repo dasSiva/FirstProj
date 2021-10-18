@@ -1,3 +1,9 @@
+#Hi Siva,
+#Simple comments such as "# Checking if choice is A" are not needed as the code is self explanatory,
+#Comment to explain sections of code or functions, and provide comments where the code is complicated rather than comment each step.
+#for example, "".join([encrptKey[(encrptKey.find(character)-3) % 71]for character in secret_pswd]), is complicated so comment about how it works
+#note that there are more than 71 symbols on the keyboard
+
 # importing os library
 import os
 
