@@ -1,7 +1,7 @@
 # importing os library
 import os
 
-# global variable assigned with all characters that will be used to encrypt and decrypt password
+# global variable assigned with characters that will be used to encrypt and decrypt password
 encrptKey = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@\'#,\"$!&\\"
 
 # Getting username
@@ -91,7 +91,7 @@ while choice != 'Q':
         view_details()
 
     # Exit application if any other choice
-    else:
+    elif choice != 'Q':
         print("Invalid choice")
 
 # Exiting the application when choice is Q
