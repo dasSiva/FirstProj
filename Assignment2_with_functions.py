@@ -1,14 +1,15 @@
-#Hi Siva,
-#Simple comments such as "# Checking if choice is A" are not needed as the code is self explanatory,
-#Comment to explain sections of code or functions, and provide comments where the code is complicated rather than comment each step.
-#for example, "".join([encrptKey[(encrptKey.find(character)-3) % 71]for character in secret_pswd]), is complicated so comment about how it works
-#note that there are more than 71 symbols on the keyboard
+# Hi Siva,
+# Simple comments such as "# Checking if choice is A" are not needed as the code is self explanatory,
+# Comment to explain sections of code or functions, and provide comments where the code is complicated rather than comment each step.
+# for example, "".join([encrptKey[(encrptKey.find(character)-3) % 71]for character in secret_pswd]), is complicated so comment about how it works
+# note that there are more than 71 symbols on the keyboard
 
 # importing os library
 import os
 
 # global variable assigned with characters that will be used to encrypt and decrypt password
-encrptKey = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@\'#,\"$!&\\~%^*()_+=-?/><;:|.{}[]"
+encrptKey = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@\'#,\"$!&\\~%^*()_+=-?/><;:|.{}![] "
+
 name = input("Welcome to Apps2U. Please enter your name: ")
 
 
@@ -21,7 +22,6 @@ else:
     f = open(name+".txt", "x")
 
 
-# defining the function that saves username,password and url
 def add_details():
 
     username = input("Enter username: ")
@@ -29,7 +29,7 @@ def add_details():
     url = input("Enter url: ")
 
     # Encrypting password- For every character in password, find the character in the "encryptKey" string and replace it with the character which is located at the 3rd position from that character
-    secret = "".join([encrptKey[(encrptKey.find(character)+3) % 93]
+    secret = "".join([encrptKey[(encrptKey.find(character)+3) % 95]
                       for character in password])
 
     f = open(name+".txt", "a")
@@ -39,7 +39,6 @@ def add_details():
     f.close()
 
 
-# defining the function that reads file and display content
 def view_details():
 
     f = open(name+".txt", "r")
@@ -65,7 +64,7 @@ def view_details():
 
         # Decrypt the password- For every character in the encrypted password, find the character in the "encryptKey" string and replace it with the character which is located 3rd positions to the left
 
-        decrpted_pswd = "".join([encrptKey[(encrptKey.find(character)-3) % 93]
+        decrpted_pswd = "".join([encrptKey[(encrptKey.find(character)-3) % 95]
                                  for character in secret_pswd])
 
         print('{:12}  {:12}  {:12}'.format(
